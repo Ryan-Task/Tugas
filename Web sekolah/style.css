@@ -1,0 +1,123 @@
+.swiper-slide img {
+  width: 50%;
+  height: auto;
+}
+
+.container h5 {
+  margin-top: 10px;
+  font-size: 1.25rem;
+  white-space: nowrap; /* Mencegah teks membungkus ke baris berikutnya */
+}
+
+.background-section {
+  background-image: url("/images/smp\ \(1\).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.swipr-container::-webkit-scrollbar {
+  display: none;
+}
+.modal-body {
+  background-color: rgb(163, 163, 173);
+  color: white;
+  font-weight: bold;
+}
+.modal-header {
+  background-color: rgb(43, 40, 40);
+  color: white;
+  font-weight: bold;
+}
+.modal-footer {
+  background-color: rgb(36, 33, 33);
+  color: white;
+  font-weight: bold;
+}
+
+.card-body {
+  background-color: #cbc5c1;
+  border-style: groove;
+}
+.container-text {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.swiper-wrapper img {
+  filter: drop-shadow(2px 2px 15px red);
+}
+.mt-custom {
+  margin-top: 10rem;
+}
+
+
+/* (layar keciel) */
+@media (max-width: 760px) {
+  .background-section {
+    background-size: 40%;
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    height: auto;
+  }
+
+  .container h5 {
+    font-size: 1.4rem;
+    margin-top: 100px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  .container-1 {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "main" "main"
+      "main" "main";
+  }
+  .card {
+    grid-area: "main";
+    margin: 9px;
+  }
+  .card img {
+    height: 10rem;
+  }
+
+  .swiper {
+    display: block;
+  }
+  .cards-container {
+    display: none;
+  }
+  
+}
+
+/* (layar lebih besar) */
+@media (min-width: 761px) {
+  .container h5 {
+    font-size: 1.25rem;
+    white-space: nowrap;
+  }
+  .container-1 {
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    width: 18rem;
+  }
+  .card img {
+    height: 10rem;
+  }
+  .swiper {
+    display: none;
+  }
+  .cards-container {
+    display: block;
+  }
+  .container h4 {
+    font-size: 3rem;
+    margin-top: 100px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+}
